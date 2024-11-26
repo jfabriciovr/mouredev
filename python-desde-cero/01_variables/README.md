@@ -16,8 +16,8 @@ La convención para las variables es escribirlas usando snake_case:
 
 formas de escribir variables no aceptadas por convención:
 
-- first-name
-- first@name
-- first$name
-- num-1
-- 1num
+- `first-name`
+- `first@name`
+- `first$name`
+- `num-1`
+- `1num`
