@@ -1,7 +1,6 @@
-Enlaces de interés:
+Objetivos de la lección:
 
-- Página oficial de python:
-- Documentación Oficial de python: https://docs.python.org/es/3/
-- Tutorial oficial de python: https://docs.python.org/es/3/tutorial/index.html
-- Repositorio "30 días de Python": https://github.com/Asabeneh/30-Days-Of-Python
-- Juego Códex para aprender python: https://www.codedex.io/python
+- Sintaxis de Python
+- Cómo imprimir texto en la consola
+- Comentarios en Python
+- Tipo de datos básicos
