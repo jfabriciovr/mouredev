@@ -2,21 +2,23 @@ my_string_variable = "My String variable"
 print(my_string_variable)
 
 my_int_variable = 5
-print(my_int_variable)
+print(my_int_variable) # 5
+print(type(my_int_variable)) # <class 'int'>
 
-my_int_to_str_variable = str(my_int_variable)
-print(my_int_to_str_variable)
-print(type(my_int_to_str_variable))
+my_int_to_str_variable = str(my_int_variable) # la función str convierte el argumenta a una cadena de texto
+print(my_int_to_str_variable) # 5
+print(type(my_int_to_str_variable)) # <class 'str'> 
 
 my_bool_variable = False
-print(my_bool_variable)
+print(my_bool_variable) # False
+print(type(my_bool_variable)) # <class 'bool'>
 
-# ConcatenaciÃ³n de variables en un print
-print(my_string_variable, my_int_to_str_variable, my_bool_variable)
-print("Este es el valor de:", my_bool_variable)
+# Concatenación de variables en un print
+print(my_string_variable, my_int_to_str_variable, my_bool_variable) # My String variable 5 False
+print("Este es el valor de:", my_bool_variable) # Este es el valor de: False
 
 # Algunas funciones del sistema
-print(len(my_string_variable))
+print(len(my_string_variable)) # 18
 
 # Variables en una sola lÃ­nea. Â¡Cuidado con abusar de esta sintaxis!
 name, surname, alias, age = "Brais", "Moure", 'MoureDev', 35
