@@ -14,7 +14,7 @@ La convención para las variables es escribirlas usando snake_case:
 
 - `mi_variable`
 
-formas de escribir variables no aceptadas por convención:
+Formas NO ACEPTADAS para declarar variables:
 
 - `first-name`
 - `first@name`
