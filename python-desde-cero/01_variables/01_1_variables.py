@@ -20,25 +20,24 @@ print("Este es el valor de:", my_bool_variable) # Este es el valor de: False
 # Algunas funciones del sistema
 print(len(my_string_variable)) # 18
 
-# Variables en una sola lÃ­nea. Â¡Cuidado con abusar de esta sintaxis!
+# Variables en una sola lí­nea. ¡Cuidado con abusar de esta sintaxis!
 name, surname, alias, age = "Brais", "Moure", 'MoureDev', 35
 print("Me llamo:", name, surname, ". Mi edad es:",
       age, ". Y mi alias es:", alias)
 
 # Inputs
-name = input('Â¿CuÃ¡l es tu nombre? ')
-age = input('Â¿CuÃ¡ntos aÃ±os tienes? ')
-print(name)
-print(age)
+name = input('¿Cuál es tu nombre? ')
+age = input('¿Cuántos años tienes? ')
+print(f"Hola {name}, tienes {age} años")
 
 # Cambiamos su tipo
 name = 35
 age = "Brais"
-print(name)
-print(age)
+print("Ahora hemos intercambiado las variables, 'name' = ", name)
+print("Y 'age' es = ", age)
 
-# Â¿Forzamos el tipo?
-address: str = "Mi direcciÃ³n"
+# ¿Forzamos el tipo?
+address: str = "Mi dirección"
 address = True
 address = 5
 address = 1.2
