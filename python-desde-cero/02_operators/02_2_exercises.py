@@ -1,5 +1,6 @@
 # 1. Realiza las siguientes operaciones aritmÃ©ticas:
 # â€¢	Suma: 15 + 25
+
 # â€¢	Resta: 50 - 22
 # â€¢	MultiplicaciÃ³n: 8 * 7
 # â€¢	DivisiÃ³n: 100 / 20
