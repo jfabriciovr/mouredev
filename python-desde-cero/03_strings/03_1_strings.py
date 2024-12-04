@@ -55,4 +55,4 @@ print(language.upper().isupper()) # True
 print(language.lower()) # python
 print(language.count("t")) # 1
 print(language.isnumeric()) # False
-print(language.startswith("Py"))
+print(language.startswith("Py")) # True

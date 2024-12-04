@@ -31,5 +31,38 @@ Funcion para obtener la longitud de una cadena en Python
 
 """
 ¿Cuál es la salida de este código?
-"""
+
 print("Mi nombre es {} {} y tengo {}".format("Brais", "Moure", 37))
+
+"""
+# la operación format() inserta variables en una cadena en las posiciones
+# indicadas por los corchetes {}.
+
+"""
+¿Qué devuelve el siguiente código?
+
+'Python'.isnumeric()
+"""
+# False
+# La función isnumeric() devuelve True si todos los caracteres de la cadena son
+# números, False en caso contrario.
+
+"""
+¿Cuál es el formato correcto para insertar variables en una cadena usando f-strings?
+"""
+# f"cadena {variable}"
+
+"""
+¿Qué imprime este código?
+
+print("python"[::-1])
+"""
+# nohtyp
+# El operador de slicing [::-1] devuelve la cadena en orden inverso.
+
+"""
+¿Cuál es la salida del siguiente código?
+
+print("Python".upper())
+"""
+# PYTHON

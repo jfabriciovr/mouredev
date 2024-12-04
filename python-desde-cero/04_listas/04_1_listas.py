@@ -19,8 +19,8 @@ print(my_other_list[0]) # 35
 print(my_other_list[1]) # 1.77
 print(my_other_list[-1]) # "Moure" es el último elemento
 print(my_other_list[-4]) # 35 es el primer elemento
-print(my_other_list.count("Brais")) 
 #print(my_other_list[-5]) IndexError
 #print(my_other_list[4]) IndexError
+print(my_other_list.count("Brais")) # 1 es el número de ocurrencias de un valor
 
 
