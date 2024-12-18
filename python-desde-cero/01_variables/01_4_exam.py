@@ -54,7 +54,7 @@ age = input("¿Cuántos años tienes?")
 # La función input() devuelve una cadena con el valor introducido
 
 """
-¿Qué operación puedes usar para obtener la logitud de una cadena de texto
+¿Qué operación puedes usar para obtener la longitud de una cadena de texto
 en python?
 """
 # len()

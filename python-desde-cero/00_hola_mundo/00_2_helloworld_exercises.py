@@ -1,12 +1,12 @@
-# 1. Imprime "Â¡Hola Mundo!" por consola.
+# 1. Imprime "¡Hola Mundo!" por consola.
 
-# 2. Escribe un comentario de una sola lÃ­nea explicando quÃ© hace el cÃ³digo del Ejercicio 1.
+# 2. Escribe un comentario de una sola lí­nea explicando quÃ© hace el código del Ejercicio 1.
 
-# 3. Imprime tu nombre y edad en la misma lÃ­nea utilizando la funciÃ³n print.
+# 3. Imprime tu nombre y edad en la misma lÃ­nea utilizando la función print.
 
-# 4. Usa la funciÃ³n type() para imprimir el tipo de dato de una cadena de texto, un nÃºmero entero y un nÃºmero decimal.
+# 4. Usa la función type() para imprimir el tipo de dato de una cadena de texto, un número entero y un número decimal.
 
-# 5. Escribe un comentario en varias lÃ­neas explicando quÃ© son los tipos de datos en Python.
+# 5. Escribe un comentario en varias lí­neas explicando quÃ© son los tipos de datos en Python.
 
 # 6. Imprime el resultado de concatenar dos cadenas de texto, por ejemplo: "Hola" y "Mundo".
 
@@ -14,11 +14,11 @@
 
 # 8. Escribe un programa que solicite al usuario su nombre y lo imprima junto con un saludo.
 
-# 9. Usa print() para mostrar el resultado de la suma de dos nÃºmeros enteros y el tipo de dato resultante.
+# 9. Usa print() para mostrar el resultado de la suma de dos números enteros y el tipo de dato resultante.
 
-# 10. Comenta el cÃ³digo del Ejercicio 9, y explica quÃ© hace cada lÃ­nea usando comentarios de una sola lÃ­nea.
+# 10. Comenta el cÃ³digo del Ejercicio 9, y explica quÃ© hace cada lÃ­nea usando comentarios de una sola lí­nea.
 
-# ---------------- SOLUCION ------------
+# ---------------- SOLUCIÓN ------------
 
 # 1
 print("!Hola Mundo¡")
@@ -36,7 +36,7 @@ print(type(1.5))
 
 # 5
 """
-Los tipos de datos en python son la manera de clasificar los la información que se recibe, almacen, procesa y se muestra como reaultado en la pantalla
+Los tipos de datos en python son la manera de clasificar los la información que se recibe, almacén, procesa y se muestra como resultado en la pantalla
 Estos tipos de datos pueden ser:
 - Int: Entero
 - Float: Número decimal

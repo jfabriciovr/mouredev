@@ -1,16 +1,16 @@
 # 1. Imprime "Â¡Hola Mundo!" por consola.
 
-print("Â¡Hola Mundo!")
+print("¡Hola Mundo!")
 
 # 2. Escribe un comentario de una sola lÃ­nea explicando quÃ© hace el cÃ³digo del Ejercicio 1.
 
-# Este cÃ³digo imprime "Â¡Hola Mundo!" por consola.
+# Este código imprime "¡Hola Mundo!" por consola.
 
-# 3. Imprime tu nombre y edad en la misma lÃ­nea utilizando la funciÃ³n print.
+# 3. Imprime tu nombre y edad en la misma lÃ­nea utilizando la función print.
 
-print("Mi nombre es Brais y tengo", 37, "aÃ±os.")
+print("Mi nombre es Brais y tengo", 37, "años.")
 
-# 4. Usa la funciÃ³n type() para imprimir el tipo de dato de una cadena de texto, un nÃºmero entero y un nÃºmero decimal.
+# 4. Usa la función type() para imprimir el tipo de dato de una cadena de texto, un número entero y un número decimal.
 
 print(type("Brais"))  # str
 print(type(37))       # int
@@ -19,10 +19,10 @@ print(type(3.14))     # float
 # 5. Escribe un comentario en varias lÃ­neas explicando quÃ© son los tipos de datos en Python.
 
 """
-En Python, los tipos de datos mÃ¡s comunes son:
+En Python, los tipos de datos más comunes son:
 - str: para cadenas de texto
-- int: para nÃºmeros enteros
-- float: para nÃºmeros con decimales
+- int: para números enteros
+- float: para números con decimales
 - bool: para valores booleanos (True/False)
 """
 
@@ -34,14 +34,14 @@ print("Hola" + " " + "Mundo")
 
 my_name = "Brais"
 my_age = 37
-print("Mi nombre es", my_name, "y tengo", my_age, "aÃ±os.")
+print("Mi nombre es", my_name, "y tengo", my_age, "años.")
 
 # 8. Escribe un programa que solicite al usuario su nombre y lo imprima junto con un saludo.
 
-user_name = input("Â¿CuÃ¡l es tu nombre? ")
-print("Â¡Hola", user_name + "!")
+user_name = input("¿Cuál es tu nombre? ")
+print("¡Hola", user_name + "!")
 
-# 9. Usa print() para mostrar el resultado de la suma de dos nÃºmeros enteros y el tipo de dato resultante.
+# 9. Usa print() para mostrar el resultado de la suma de dos números enteros y el tipo de dato resultante.
 
 result = 5 + 10
 print("El resultado es:", result)
@@ -49,7 +49,7 @@ print("El tipo de dato del resultado es:", type(result))
 
 # 10. Comenta el cÃ³digo del Ejercicio 9, y explica quÃ© hace cada lÃ­nea usando comentarios de una sola lÃ­nea.
 
-# Suma dos nÃºmeros enteros.
+# Suma dos números enteros.
 result = 5 + 10
 
 # Imprime el resultado de la suma.
