@@ -9,7 +9,7 @@ print('Hola Python')
 """
 Este es un
 comentario
-en varias lÃ­neas
+en varias líneas
 """
 
 '''
