@@ -4,7 +4,7 @@ Estos son mis apuntes del curso Básico de Python impartido por Brais Moure.
 
 Liga del curso en youtube:
 
-[![primeros pasos python](image-1.png))](https://youtu.be/Kp4Mvapo5kc?si=5alnFihEZBYzox36)
+[![primeros pasos python](image-1.png)](https://youtu.be/Kp4Mvapo5kc?si=5alnFihEZBYzox36)
 
 Temas del curso:
 
