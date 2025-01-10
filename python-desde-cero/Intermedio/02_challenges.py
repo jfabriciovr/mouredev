@@ -107,6 +107,38 @@ for i in range(8):
     print(fibonacci_iterative(i))
 
 
+"""
+ES NUMERO PRIMO
+
+escribe un programa que se encargue de comprobar si un número es o no primo.
+hecho esto, imprime los números primos enre 1 y 100
+
+Un número primo es un número natural (mayor a 1) que solo es divisible por sí mismo y por el 1
+
+"""
+
+print("** numeros primos ***")
+
+def is_prime(number):
+    if number < 2:
+        return False
+    for i in range (2, number):
+        if number % i == 0:
+            return False
+    return True
+
+
+def print_primes(first, last):
+    for i in range(first, last+1):
+        if is_prime(i):
+            print(i)
+
+
+# función que imprime los números primos del 1 al 100
+print_primes(1, 100) 
+
+    
+
 
 
 
