@@ -12,6 +12,7 @@ cada impresión), sustituyendo los siguientes:
 - Múltiplos de 3 y de 5 a la vez por la palabra "fizzbuzz".
 
 '''
+print("*** FIZZ BUZZ ***")
 def fizzbuzz():
     for index in range(1,101):
         if index % 3 == 0 and index % 5 == 0: # tenemos que empezar con esta condición porque es el más restrictivo. Si no, va a entrar primero en el caso de que sea múltiplo de 3 o el de 5 pero no va a llegar a evaluar el caso donde sea múltiplo de los dos
@@ -37,32 +38,78 @@ las letras de otra palabra inicial.
 - Dos palabras exactamente iguales no son anagrama.
 """
 
-"""
-def anagrama(palabra1, palabra2):
-    if palabra1 != palabra2:
-        for letra1 in palabra1:
-            for letra2 in palabra2:
-                if letra2 != letra1:
-                    break
-                
-    else:
-        print("no es un anagrama")
-"""
-
-""" 
-def is_anagram(word_one, word_two):
-    
-    #if word_one.lower() == word_two.lower(): # dos palabras iguales no son anagrama
-     #   return "son iguales, no es un anagrama"
-    
-    return word_one == word_two
-
-print(is_anagram("Amor", "Roma"))
-"""  
+print("*****  ANAGRAMA ******")
+print("la función sorted ordena un string y lo guarda como una lista: ")
+print("'bdac'")
 print(sorted("bdac")) # ['a', 'b', 'c', 'd']
 
 def is_anagram(word_one, word_two):
-    print(sorted(word_one.lower()) == sorted(word_two.lower()))
+    if word_one.lower() == word_two.lower():
+        return False
+    return sorted(word_one.lower()) == sorted(word_two.lower()) # primero lower convierte a minúsculas y luego ordena las palabras y finalmente las compara
 
-is_anagram("Amor", "Roma")
+print(is_anagram("omar", "Roma")) # True
+
+
+"""
+******* FIBONACCI *********
+
+Escribe un programa que imprima los 50 primeros números de la serie de Fibonacci empezando en 0
+
+- La serie Fibonacci se compone por una sucesión de números en
+la que el siguiente siempre es la SUMA DE LOS DOS ANTERIORES.
+
+0, 1, 1, 2, 3, 5, 8, 13 ...
+
+F(0) = 0
+F(1) = 1
+F(n) = F(n-1) + F(n-2) para n > 1
+
+"""
+print("*** FIBONACCI ***")
+
+def fibonacci(num_terms):
+    prev = 0
+    next = 1
+
+    for index in range(num_terms):
+        print(prev)
+        fib = prev + next
+        prev = next
+        next = fib
+
+fibonacci(8)
+
+# método recursivo no es eficiente para números grandes, arriba de 30 ya se empieza a trabar
+def fibonacci_recursive(n):
+    if n <= 1:
+        return n # base case: F(0) = 0, F(1) = 1
+    else:
+        return fibonacci_recursive(n-1) + fibonacci_recursive(n-2)
+
+for i in range(8):
+    print(fibonacci_recursive(i))
+
+# método iterativo chatgpt
+def fibonacci_iterative(num_t):
+    if num_t <= 0:
+        return 0
+    elif num_t == 1:
+        return 1
+    
+    a, b = 0, 1 # initialize the first two Fibonacci numbers
+    for _ in range(2, num_t + 1):
+        a, b = b, a + b # update a and b to the next two Fibonacci numbers
+    
+    return b
+
+for i in range(8):
+    print(fibonacci_iterative(i))
+
+
+
+
+
+
+
 
