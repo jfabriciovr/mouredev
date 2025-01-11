@@ -16,11 +16,11 @@ print("*** FIZZ BUZZ ***")
 def fizzbuzz():
     for index in range(1,101):
         if index % 3 == 0 and index % 5 == 0: # tenemos que empezar con esta condición porque es el más restrictivo. Si no, va a entrar primero en el caso de que sea múltiplo de 3 o el de 5 pero no va a llegar a evaluar el caso donde sea múltiplo de los dos
-            print("fizzbuzz")
+            print(f'{index}. fizzbuzz')
         elif index % 3 == 0:
-            print("fizz")
+            print(f'{index}. fizz')
         elif index % 5 == 0:
-            print("buzz")
+            print(f'{index}. buzz')
         else:
             print(index)
 
@@ -44,7 +44,7 @@ print("'bdac'")
 print(sorted("bdac")) # ['a', 'b', 'c', 'd']
 
 def is_anagram(word_one, word_two):
-    if word_one.lower() == word_two.lower():
+    if word_one.lower() == word_two.lower(): # si las palabras co iguales, no se considera anagrama
         return False
     return sorted(word_one.lower()) == sorted(word_two.lower()) # primero lower convierte a minúsculas y luego ordena las palabras y finalmente las compara
 
@@ -73,10 +73,10 @@ def fibonacci(num_terms):
     next = 1
 
     for index in range(num_terms):
-        print(prev)
-        fib = prev + next
-        prev = next
-        next = fib
+        print(prev) # 0, 1, 1, 
+        fib = prev + next # fib = 1, 2
+        prev = next # prev = 1, 1
+        next = fib # next = 1, 2
 
 fibonacci(8)
 
@@ -117,7 +117,7 @@ Un número primo es un número natural (mayor a 1) que solo es divisible por sí
 
 """
 
-print("** numeros primos ***")
+print("** numeros primos del 1 al 100 ***")
 
 def is_prime(number):
     if number < 2:
@@ -131,7 +131,7 @@ def is_prime(number):
 def print_primes(first, last):
     for i in range(first, last+1):
         if is_prime(i):
-            print(i)
+            print(i, " ", end="")
 
 
 # función que imprime los números primos del 1 al 100
@@ -154,13 +154,11 @@ def invierte(texto):
     text_len = len(texto)
 
     for i in range(0, text_len):
-        texto_invertido += texto[text_len - i-1]
+        texto_invertido += texto[text_len - i - 1]
         
-    print(texto_invertido)
-        
-
-
-invierte("hola mundo")
+    return texto_invertido
+         
+print(invierte("hola mundo"))
 
 
 
