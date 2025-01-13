@@ -12,7 +12,10 @@
 # print(my_list[4])
 # IndexError: list index out of range
 
-import maths
+# import maths
+# ModuleNotFoundError: No module named 'maths'
+
+
 
 
 
