@@ -40,3 +40,79 @@ print(txt_file.read())
 txt_file.close()
 
 #os.remove("python-desde-cero/Intermedio/my_file.txt")
+
+# @@@@@@@@@@@@@@@@@@@@@@@@@@
+## .jason file
+# @@@@@@@@@@@@@@@@@@@@@@@@@
+
+import json
+
+json_file = open("python-desde-cero/Intermedio/my_file.json", "w+")
+
+json_test = {
+    "name": "Brais",
+    "surname": "Moure",
+    "age": 35,
+    "language": "Python",
+    "website": "https://moure.dev"
+}
+
+json.dump(json_test, json_file, indent=2)
+
+json_file = open("python-desde-cero/Intermedio/my_file.json", "r+")
+
+#print(json_file.readlines())
+"""
+['{\n', '  "name": "Brais",\n', '  "surname": "Moure",\n', '  "age": 35,\n', '  "language": "Python",\n', '  "website": "https://moure.dev"\n', '}']
+
+"""
+
+for line in json_file.readlines():
+    print(line)
+"""
+{
+
+  "name": "Brais",
+
+  "surname": "Moure",
+
+  "age": 35,
+
+  "language": "Python",
+
+  "website": "https://moure.dev"
+
+"""
+
+json_file.close()
+
+print("se vuelve a imprimir el json con un alias:")
+with open("python-desde-cero/Intermedio/my_file.json") as my_other_file:
+    for line in my_other_file.readlines():
+        print(line)
+
+print(type(my_other_file)) # <class '_io.TextIOWrapper'>
+
+print("convertir el json a dict para poderlo manipular")
+json_dict = json.load(open("python-desde-cero/Intermedio/my_file.json"))
+print(type(json_dict)) #  <class 'dict'>
+print(json_dict) # {'name': 'Brais', 'surname': 'Moure', 'age': 35, 'language': 'Python', 'website': 'https://moure.dev'}
+
+print("ahora ya como diccionario, podemos acceder un valor:")
+print(json_dict["name"]) # Brais
+
+json_file.close()
+
+# @@@@@@@@@@@@@@@@@@@@@@@@@@
+## .csv file
+# @@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+# @@@@@@@@@@@@@@@@@@@@@@@@@@
+## .xlsx file
+# @@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+# @@@@@@@@@@@@@@@@@@@@@@@@@@
+## .xml file
+# @@@@@@@@@@@@@@@@@@@@@@@@@
