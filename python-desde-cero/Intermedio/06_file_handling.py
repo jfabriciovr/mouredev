@@ -100,19 +100,40 @@ print(json_dict) # {'name': 'Brais', 'surname': 'Moure', 'age': 35, 'language': 
 
 print("ahora ya como diccionario, podemos acceder un valor:")
 print(json_dict["name"]) # Brais
-
 json_file.close()
+
 
 # @@@@@@@@@@@@@@@@@@@@@@@@@@
 ## .csv file
 # @@@@@@@@@@@@@@@@@@@@@@@@@
 
+import csv
 
-# @@@@@@@@@@@@@@@@@@@@@@@@@@
-## .xlsx file
-# @@@@@@@@@@@@@@@@@@@@@@@@@
+data = [
+    ["Name", "Age", "Email"], 
+    ["Alice", 30, "alice@gmail.com"]
+]
+file_name = "python-desde-cero/Intermedio/my_file.csv"
 
+with open(file_name, "w") as file:
+    writer = csv.writer(file)
+    writer.writerows(data)
+
+# Leer el archivo 
+# 3 maneras de hacerlo
+with open(file_name) as file:
+    print(file.read())
+
+with open(file_name) as file:
+    reader = csv.reader(file)
+    for row in reader:
+        print(row)
+
+with open(file_name) as file:
+    for line in file.readlines():
+        print(line)
 
 # @@@@@@@@@@@@@@@@@@@@@@@@@@
 ## .xml file
 # @@@@@@@@@@@@@@@@@@@@@@@@@
+import xml
